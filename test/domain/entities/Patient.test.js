@@ -46,6 +46,8 @@ describe('Patient Entity', () => {
         birthDate: '2005-10-05',
       });
 
+      console.log(patient.birthDate);
+
       expect(patient.birthDate.getFullYear()).to.equal(2005);
       expect(patient.birthDate.getMonth() + 1).to.equal(10);
       expect(patient.birthDate.getDate() + 1).to.equal(5);
