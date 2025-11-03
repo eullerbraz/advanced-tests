@@ -43,15 +43,12 @@ describe('Patient Entity', () => {
       const clock = sinon.useFakeTimers(new Date('2025-10-01'));
       const patient = new Patient({
         ...defaultPatientData,
-        birthDate: '2005-10-05',
+        birthDate: '2005-10-05T12:00:00Z',
       });
-
-      console.log(patient.birthDate);
-      console.log(patient.birthDate.getDate());
 
       expect(patient.birthDate.getFullYear()).to.equal(2005);
       expect(patient.birthDate.getMonth() + 1).to.equal(10);
-      expect(patient.birthDate.getDate() + 1).to.equal(5);
+      expect(patient.birthDate.getDate()).to.equal(5);
       clock.restore();
     });
 
