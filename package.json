@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive test/**/*.test.js",
+    "test:watch": "mocha --recursive test/**/*.test.js --watch",
     "coverage": "c8 mocha --recursive test/**/*.test.js"
   },
   "keywords": [],
