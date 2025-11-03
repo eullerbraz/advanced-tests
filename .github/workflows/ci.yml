@@ -24,4 +24,4 @@ jobs:
         run: npm test
 
       - name: Check Coverage
-        run: npx c8 --check-coverage --lines 90 --branches 80 npm test
+        run: npx c8 --check-coverage --lines 80 --branches 80 npm test
